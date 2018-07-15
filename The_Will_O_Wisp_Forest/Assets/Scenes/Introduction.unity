@@ -677,6 +677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1653504038}
   - component: {fileID: 1653504037}
+  - component: {fileID: 1653504039}
   - component: {fileID: 1653504036}
   m_Layer: 0
   m_Name: GameObject
@@ -693,15 +694,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1653504035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e5caaf9daf953f4f95f3c0b9211f715, type: 3}
+  m_Script: {fileID: 11500000, guid: ed99763e450005447bab759e0a834a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s:
-  - 'Night had fallen across the land...:'
-  - The only light to guide you was the silvery glow of the moon overhead, but even
-    that was unreliable.
-  - With the warmth of the sun gone, doubt was beginning to creep over you.
-  - Maybe this was a bad idea after all...:Elaine
 --- !u!114 &1653504037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +726,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653504039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653504035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02aacd0bc280c3248a2f7cf7d4a76912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  file: 
 --- !u!1 &1740281084
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13100001, y: 0.07869508}
   m_AnchorMax: {x: 0.8534982, y: 0.957}
-  m_AnchoredPosition: {x: 1.3000002, y: -0.012497}
+  m_AnchoredPosition: {x: 1.2999878, y: -0.012496948}
   m_SizeDelta: {x: -2.7, y: 0.025024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740281086
