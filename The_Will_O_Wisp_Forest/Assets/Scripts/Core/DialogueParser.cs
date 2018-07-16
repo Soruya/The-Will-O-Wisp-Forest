@@ -8,21 +8,23 @@ public class DialogueParser : MonoBehaviour {
     public static DialogueParser instance;
     public string file;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public struct DialogueLine
     {
         public string speakerName;
         public string speech;
-        public string pose;
+        /*public string pose;
         public string position;
-        public string[] options;
+        public string[] options;*/
 
-        public DialogueLine(string speakerName, string speech, string pose, string position)
+        public DialogueLine(string speakerName, string speech)
         {
             this.speakerName = speakerName;
             this.speech = speech;
-            this.pose = pose;
-            this.position = position;
-            this.options = new string[0];
         }
 
         public string GetSpeakerName()
@@ -34,22 +36,13 @@ public class DialogueParser : MonoBehaviour {
         {
             return this.speech;
         }
-
-        public string GetPose()
-        {
-            return this.pose;
-        }
-
-        public string GetPosition()
-        {
-            return this.position;
-        }
     }
 
     public List<DialogueLine> lines;
 
 	// Use this for initialization
 	void Start () {
+        instance = this;
         file = "Assets/Data/";
         string sceneName = SceneManager.GetActiveScene().name;
         file += sceneName + ".txt";
@@ -58,7 +51,7 @@ public class DialogueParser : MonoBehaviour {
 
         LoadDialogue(file);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -78,22 +71,8 @@ public class DialogueParser : MonoBehaviour {
                 if (line != null)
                 {
                     string[] lineData = line.Split(':');
-                    if (lineData[0] == "Player")
-                    {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", "", "");
-                        lineEntry.options = new string[lineData.Length - 1];
-
-                        for (int i = 1; i < lineData.Length; i++)
-                        {
-                            lineEntry.options[i - 1] = lineData[i];
-                        }
-                        lines.Add(lineEntry);
-                    }
-                    else
-                    {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], lineData[2], lineData[3]);
-                        lines.Add(lineEntry);
-                    }
+                    DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1]);
+                    lines.Add(lineEntry);
                 }
             }
             while (line != null);
