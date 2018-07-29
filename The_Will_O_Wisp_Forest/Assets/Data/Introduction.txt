@@ -13,7 +13,7 @@ Elaine:(Maybe this was a bad idea after all...):worry 1
  :Branches hang low over the path, occasionally snagging on your hair and clothes.
  :Unease started to settle around you when you realized just how quiet it was now.
  :The sounds of the nocturnal creatures prowling the undergrowth seemed to be nothing more than a distant memory.
-Elaine:(How much further is it?):surprised 1
+Elaine:(How much further is it?):confused 1
  :You were convinced that you would still be able to see the main road if you dared a glance over your shoulder.
  :How long had you been fumbling around in the darkness? Time had distorted itself and stretched. 
  :What could have been nothing more than a few minutes felt like hours.
@@ -32,7 +32,7 @@ Elaine:(How much further is it?):surprised 1
  :You hike up the hem of your dress so it doesn't get covered in mud and stop for a moment. Silence.
  :You slowly turn and stare back through the trees, wondering which way you had actually come from.
  :The light still danced in what you thought was in front of you, bobbing and weaving through the nearby trees.
-Elaine:(Why can't I hear someone else walking?)
+Elaine:(Why can't I hear someone else walking?):worry 1
  :You had heard tales of people getting lost in the woods chasing shadow figures or lights but you would've have taken them with a grain of salt until this moment. 
  :What were you supposed to do now?
 Willo:...Oh. It stopped.
@@ -41,15 +41,15 @@ Willo:...Oh. It stopped.
  :A glimmer of hope surges through you. You hike up the bottom of your dress again and trudge through the marshy ground.
  :The lights continue to flicker before you, before stopping completely, and you find yourself in a clearing with two others. 
  :You could have sworn the lights you had been following were coming from the boy on the left.
-Elaine:Uh, good evening.
+Elaine:Uh, good evening.:surprised 1
  :You dip your head politely. The unusual pair exchange knowing glances but don't return the greeting. 
  :You hadn't intended on interrupting whatever they were doing, but they were the only people you had seen for miles and you would rather not spend the rest of you night wandering through the woods.
-Elaine:Would you be able to point me in the direction of Ebner manor? I've managed to get myself turned around in the dark.
+Elaine:Would you be able to point me in the direction of Ebner manor? I've managed to get myself turned around in the dark.:worry 1
 Mot:Never heard of it.
  :The other boy looks away, refusing to meet your gaze, the flecks of light pulsate around him. 
  :Had you managed to get that far off course? What if you hadn’t even turned down the right road! 
  :You had never been this far west before. None of the things that could serve as landmarks looked familiar to you. :The signposts name far off places you had only heard of by name and stories of those around you. 
-Elaine:Maybe it’s called something else around here, there was a posting in the town square, I’m almost certain it’s around here somewhere.
+Elaine:Maybe it’s called something else around here, there was a posting in the town square, I’m almost certain it’s around here somewhere.:confused 1
  :The sickly looking boy shrugs. The one with the wisps continues to ignore you.
  :There was something off about both of them. It was hard to put a finger on it.
  :Fatigue was starting to cloud your judgement. 
