@@ -315,10 +315,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Core\Character.cs" />
+    <Compile Include="Assets\Scripts\Core\CharacterManager.cs" />
+    <Compile Include="Assets\Scripts\Core\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Core\DialogueParser.cs" />
     <Compile Include="Assets\Scripts\Core\DialogueSystem.cs" />
-    <Compile Include="Assets\Scripts\Core\IntroductionDialogue.cs" />
-    <Compile Include="Assets\Scripts\Core\IntroTest.cs" />
+    <Compile Include="Assets\Scripts\Testing\CharacterTest.cs" />
+    <Compile Include="Assets\Scripts\Testing\IntroTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Data\Introduction.txt" />

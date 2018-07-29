@@ -13,18 +13,24 @@ public class DialogueParser : MonoBehaviour {
         instance = this;
     }
 
-    public struct DialogueLine
+    public class DialogueLine
     {
         public string speakerName;
         public string speech;
-        /*public string pose;
-        public string position;
-        public string[] options;*/
+        public string emotion;
+        // public string[] options;
 
         public DialogueLine(string speakerName, string speech)
         {
             this.speakerName = speakerName;
             this.speech = speech;
+        }
+
+        public DialogueLine(string speakerName, string speech, string emotion)
+        {
+            this.speakerName = speakerName;
+            this.speech = speech;
+            this.emotion = emotion;
         }
 
         public string GetSpeakerName()
@@ -35,6 +41,11 @@ public class DialogueParser : MonoBehaviour {
         public string GetSpeech()
         {
             return this.speech;
+        }
+
+        public string GetEmotion()
+        {
+            return this.emotion;
         }
     }
 
@@ -50,7 +61,7 @@ public class DialogueParser : MonoBehaviour {
         lines = new List<DialogueLine>();
 
         LoadDialogue(file);
-	}
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -71,8 +82,16 @@ public class DialogueParser : MonoBehaviour {
                 if (line != null)
                 {
                     string[] lineData = line.Split(':');
-                    DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1]);
-                    lines.Add(lineEntry);
+                    if (lineData.Length == 3)
+                    {
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], lineData[2]);
+                        lines.Add(lineEntry);
+                    }
+                    else if (lineData.Length == 2)
+                    {
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1]);
+                        lines.Add(lineEntry);
+                    }
                 }
             }
             while (line != null);

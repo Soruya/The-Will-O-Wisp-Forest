@@ -93,6 +93,13 @@ public class DialogueSystem : MonoBehaviour
         return retVal;
     }
 
+    // Close entire speechPanel and stop all dialogue
+    public void Close()
+    {
+        StopSpeaking();
+        speechPanel.SetActive(false);
+    }
+
     [System.Serializable]
     public class ELEMENTS
     {

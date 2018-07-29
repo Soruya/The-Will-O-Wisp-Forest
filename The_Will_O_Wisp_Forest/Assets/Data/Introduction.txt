@@ -1,7 +1,7 @@
  :Night had fallen across the land...
  :The only light you had to guide you was the silvery glow of the moon overhead, but even that was unreliable.
  :With the warmth of the sun gone doubt was beginning to creep over you.
-Elaine:(Maybe this was a bad idea after all...)
+Elaine:(Maybe this was a bad idea after all...):worry 1
  :A sigh rises in your chest as you look around at your darkened surroundings. 
  :You had already come this far.
  :Turning back now wouldn't do anything but prove that you couldn't do this. 
@@ -13,7 +13,7 @@ Elaine:(Maybe this was a bad idea after all...)
  :Branches hang low over the path, occasionally snagging on your hair and clothes.
  :Unease started to settle around you when you realized just how quiet it was now.
  :The sounds of the nocturnal creatures prowling the undergrowth seemed to be nothing more than a distant memory.
-Elaine:(How much further is it?)
+Elaine:(How much further is it?):surprised 1
  :You were convinced that you would still be able to see the main road if you dared a glance over your shoulder.
  :How long had you been fumbling around in the darkness? Time had distorted itself and stretched. 
  :What could have been nothing more than a few minutes felt like hours.
@@ -35,7 +35,7 @@ Elaine:(How much further is it?)
 Elaine:(Why can't I hear someone else walking?)
  :You had heard tales of people getting lost in the woods chasing shadow figures or lights but you would've have taken them with a grain of salt until this moment. 
  :What were you supposed to do now?
-Willow:...Oh. It stopped.
+Willo:...Oh. It stopped.
  :You turn towards the direction the lights had been leading you.
  :Was that a person? Was there actually someone out here?
  :A glimmer of hope surges through you. You hike up the bottom of your dress again and trudge through the marshy ground.
@@ -53,7 +53,7 @@ Elaine:Maybe it’s called something else around here, there was a posting in the 
  :The sickly looking boy shrugs. The one with the wisps continues to ignore you.
  :There was something off about both of them. It was hard to put a finger on it.
  :Fatigue was starting to cloud your judgement. 
-Mot:Maybe you shouldn’t have gotten lost then.
+Mot:Maybe you shouldn’t have gotten lost then.:annoying
 Elaine:I beg your pardon?
 Mot:Maybe you shouldn’t have gotten lost and you wouldn’t be asking us for help. How am I supposed to know what you looking for? There’s nothing around for miles.
  :You remain there in stunned silence for a moment.
